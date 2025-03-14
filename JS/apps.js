@@ -11,16 +11,19 @@ while (opcionCliente !== "5") {
             if (reserva){
                 datos.push(reserva);
             }
+            //Se guardan los datos
             break;
         case "2":
             let compra = comprarOnline();
             if(compra.length){
                 datos.push({compra})
             }
+            //Se guardan los datos 
             break;
         case "3":
             let nuevaCuenta = crearCuenta();
             datos.push({cuenta: nuevaCuenta});
+            //Se guardan los datos 
             break;
         case "4":
             reservarSalon();
@@ -38,6 +41,7 @@ while (opcionCliente !== "5") {
 //Para reservar mesas
 
 function reservarMesa() {
+    //Info necesaria para la reserva 
     let nombreCliente = prompt("Indique su nombre: ");
 
     let apellidoCliente = prompt("Indique su apellido: ");
@@ -49,7 +53,7 @@ function reservarMesa() {
 
     let mesaElegida = mesasAelegir(nombreCliente);
     let reserva = {nombreCliente, apellidoCliente, emailCliente, telefonoCliente, mesaElegida};
-    console.log("nueva reserva realizada: ", reserva);
+    console.log("nueva reserva realizada: ", reserva); 
     return reserva; 
 }
 
@@ -73,7 +77,7 @@ function mesasAelegir(nombre = "") { //default, nombre ""
         if (!mesasDisponibles.includes(mesaElegida)) {
             alert(`Esa mesa no está disponible. Por favor elija otra: ${mesasDisponibles.join(", ")}`);
         }
-    } while (!mesasDisponibles.includes(mesaElegida));
+    } while (!mesasDisponibles.includes(mesaElegida)); //La bucle se finalizada una vez ingresa una mesa disponible
 
     confirm(`La mesa elegida es ${mesaElegida}`);
     return mesaElegida;
@@ -81,7 +85,7 @@ function mesasAelegir(nombre = "") { //default, nombre ""
 
 
 function comprarOnline() {
-    let objetosDeLaTienda = ["queso vegano", "salchichas veggies", "carne vegetal", "verduras", "lentejas"];
+    let objetosDeLaTienda = ["queso vegano", "salchichas veggies", "carne vegetal", "verduras", "lentejas"]; //objetos disponibles 
     let carrito = [];
     let cuentaAsegurada = prompt("Usted posee una cuenta? Escriba si, si es el caso, o no, en el caso contrario.").trim().toLowerCase;
     if (cuentaAsegurada === "sí" || cuentaAsegurada === "si") {
@@ -106,6 +110,7 @@ function comprarOnline() {
 
 function crearCuenta(direccion = 1){
     confirm("Desea crear una cuenta?");
+    //Info necesaria para crear una cuenta 
     const usuarioCliente = prompt("Ingrese un nombre de usuario: ");
     const emailCuenta = prompt("Ingrese su email: ");
     let contraseñaUsuario = prompt("Ingrese contraseña: ");
