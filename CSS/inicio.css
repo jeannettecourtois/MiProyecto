@@ -1,0 +1,64 @@
+.myBody{
+    background-image: url("../Images/restaurante.png");
+    background-size: cover; /*Ajusta la imagen para asegurarse que todo quepe*/
+    background-position: center; /*En el centro */
+    background-repeat: no-repeat;
+    height: 100vh;/*100% de altura*/
+    margin: 0;
+    padding: 0;
+}
+
+/*Para el main*/
+
+main{
+    display: flex; /*activa el modo flex*/
+    flex-direction: column;/*en columna*/
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: white;
+}
+h1{
+    font-family: 'Georgia', serif;
+    font-size: 4rem; /*1rem = 16px por defecto, así que 4rem = 64px*/
+}
+
+ul {
+    list-style: none; /*elimina los puntos de la lista*/
+    padding-left: 15px;
+    display: flex;
+    gap: 2rem; /*espacio entre elementos*/
+}
+li{
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+
+
+
+
+/*------------Responsive para celulares----------------*/
+
+@media (max-width: 600px) {
+    body, .myBody {
+        padding: 1rem; /* Espacio interno para que no quede todo pegado al borde */
+    }
+
+    h1 {
+        font-size: 2.5rem;       /* Título más chico */
+        text-align: center;      /* Lo centramos para que se vea más elegante */
+        padding-left: 0;         /* Eliminamos el padding izquierdo si tenías */
+    }
+
+    ul {
+        flex-direction: column; /* Apila las opciones */
+        align-items: center;    /* Centra cada ítem en columna */
+        gap: 1rem;
+        padding: 0;             /* Elimina padding izquierdo */
+    }
+
+    li {
+        font-size: 1.2rem;
+    }
+}

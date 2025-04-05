@@ -29,4 +29,5 @@ A un costado de la página, podrás ver productos y platos recomendados para los
 
 
 
-
+Link de maqueta: 
+https://www.figma.com/design/07byTi3NF4hr3xywnV2byz/MiProyecto?node-id=0-1&t=fFoMKZaKSoyWck42-1
