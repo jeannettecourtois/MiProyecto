@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    font-family: 'Georgia', serif;
+    background-color: #EDE8D0;
+}
+
+.navbar {
+    background-color: #EDE8D0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.nav-left h2 {
+    margin: 0;
+    font-size: 2rem;
+    color: #2D1E1E;
+}
+
+.nav-center ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-center a {
+    text-decoration: none;
+    color: #2D1E1E;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.icono {
+    width: 24px;
+    height: 24px;
+}
+
+.puntos span,
+.carrito span {
+    margin-left: 0.5rem;
+    font-weight: bold;
+}
+
+.icono-enlace {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit; /* mantiene el color de texto */
+}
