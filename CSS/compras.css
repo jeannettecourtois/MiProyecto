@@ -57,3 +57,37 @@ body {
     text-decoration: none;
     color: inherit; /* mantiene el color de texto */
 }
+
+
+.footer {
+    background-color: #F9F4ED;
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+    margin-top: 4rem;
+    color: #2D1E1E;
+}
+
+.footer .col ul {
+    list-style: none;
+    padding: 0;
+    margin: 0.5rem 0 0;
+}
+
+.footer .col ul li {
+    margin-bottom: 0.5rem;
+}
+
+/* Responsive para el footer */
+@media (max-width: 600px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 1.5rem;
+    }
+
+    .footer .col {
+        width: 100%;
+    }
+}

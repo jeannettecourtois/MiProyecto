@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Mi carrito - Umami</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../CSS/carrito.css">
+    <link rel="stylesheet" href="../CSS/reserva.css">
 </head>
 <body>
     <!-- NAVBAR -->
@@ -33,30 +33,27 @@
         </div>
     </nav>
 
-    <!-- CONTENIDO PRINCIPAL -->
     <main>
-        <section class="carrito-info">
-            <h2>Mi carrito</h2>
-
-            <div class="info-linea">
-                <img src="../Images/tarjeta.png" alt="Puntos" class="icono">
-                <p>Puntos acumulados <span id="puntos-contador-carrito">0</span></p>
-            </div>
-            <div class="info-linea">
-                <img src="../Images/articulo.png" alt="Artículos" class="icono">
-                <p><span id="articulos-contador">0</span> artículos</p>
-            </div>
-            <div class="info-linea">
-                <img src="../Images/carrito.png" alt="Carrito" class="icono">
-                <p>Total carrito <span id="total-carrito">0</span> $</p>
-            </div>
-
-            <div class="botones">
-                <button id="encargar-btn">Encargar</button>
-                <button id="vaciar-carrito">Vaciar carrito</button>
-            </div>
+        <section class="reserva-form">
+          <h2>Reservar mesa</h2>
+      
+          <input type="text" id="nombre" placeholder="Nombre">
+          <input type="text" id="apellido" placeholder="Apellido">
+          <input type="tel" id="telefono" placeholder="Teléfono móvil">
+          <input type="time" id="hora" placeholder="Hora de reserva">
+          <input type="date" id="fecha" placeholder="Fecha">
+      
+          <div class="mesas">
+            <label><input type="radio" name="mesa" value="1"> Mesa 1</label>
+            <label><input type="radio" name="mesa" value="2"> Mesa 2</label>
+            <label><input type="radio" name="mesa" value="3"> Mesa 3</label>
+            <label><input type="radio" name="mesa" value="4"> Mesa 4</label>
+          </div>
+      
+          <button id="btn-reservar">Reservar</button>
         </section>
-    </main>
+      </main>
+      
 
 
     <footer class="footer">
@@ -92,6 +89,6 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="../JS/carrito.js"></script>
+    <script src="../JS/reserva.js"></script>
 </body>
 </html>
