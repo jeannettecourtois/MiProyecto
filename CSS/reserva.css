@@ -4,7 +4,11 @@ body {
     background-color: #EDE8D0;
 }
 
-/* NAVBAR */
+h2 a{
+    text-decoration: none;
+    color: black;
+}
+ 
 .navbar {
     background-color: #EDE8D0;
     display: flex;
@@ -58,7 +62,7 @@ body {
     font-weight: bold;
 }
 
-/* CONTENIDO PRINCIPAL */
+ 
 main {
     display: flex;
     justify-content: center;
@@ -126,10 +130,10 @@ main {
     margin-bottom: 0.5rem;
 }
 
-/* FORMULARIO DE RESERVA */
+ 
 
 .reserva-form {
-    background-color: #D1AE6F; /* color tipo mostaza suave */
+    background-color: #D1AE6F;  
     padding: 2rem;
     border-radius: 12px;
     text-align: center;
@@ -177,7 +181,7 @@ main {
 }
 
 .mesas input[type="radio"] {
-    accent-color: #F46696; /* color rosado para la selección */
+    accent-color: #F46696;  
 }
 
 .reserva-form button {
@@ -195,7 +199,7 @@ main {
 }
 
 
-/* ---------- RESPONSIVE PARA PANTALLAS MENORES A 600px ---------- */
+ 
 @media (max-width: 600px) {
     .navbar {
       flex-direction: column;

@@ -32,7 +32,7 @@ function vaciarCarrito(){
 actualizarElementos();
 
 document.addEventListener("DOMContentLoaded", () => {
-    // ...otras funciones como actualizarElementos();
+    
 
     const botonVaciar = document.getElementById("vaciar-carrito");
     

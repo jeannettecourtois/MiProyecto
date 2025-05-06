@@ -3,7 +3,10 @@ body {
     font-family: 'Georgia', serif;
     background-color: #EDE8D0;
 }
-
+h2 a{
+    text-decoration: none;
+    color: black;
+}
 .navbar {
     background-color: #EDE8D0;
     display: flex;
@@ -55,7 +58,7 @@ body {
     display: flex;
     align-items: center;
     text-decoration: none;
-    color: inherit; /* mantiene el color de texto */
+    color: inherit; 
 }
 
 
@@ -78,7 +81,7 @@ body {
     margin-bottom: 0.5rem;
 }
 
-/* Responsive para el footer */
+ 
 @media (max-width: 600px) {
     .footer {
         flex-direction: column;

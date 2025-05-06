@@ -1,18 +1,18 @@
 .myBody{
     background-image: url("../Images/restaurante.png");
-    background-size: cover; /*Ajusta la imagen para asegurarse que todo quepe*/
-    background-position: center; /*En el centro */
+    background-size: cover;  
+    background-position: center;  
     background-repeat: no-repeat;
-    height: 100vh;/*100% de altura*/
+    height: 100vh; 
     margin: 0;
     padding: 0;
 }
 
-/*Para el main*/
+ 
 
 main{
-    display: flex; /*activa el modo flex*/
-    flex-direction: column;/*en columna*/
+    display: flex; 
+    flex-direction: column; 
     align-items: center;
     justify-content: center;
     height: 100%;
@@ -20,14 +20,14 @@ main{
 }
 h1{
     font-family: 'Georgia', serif;
-    font-size: 4rem; /*1rem = 16px por defecto, así que 4rem = 64px*/
+    font-size: 4rem;  
 }
 
 ul {
-    list-style: none; /*elimina los puntos de la lista*/
+    list-style: none;  
     padding-left: 15px;
     display: flex;
-    gap: 2rem; /*espacio entre elementos*/
+    gap: 2rem;  
 }
 li{
     font-size: 1.5rem;
@@ -47,27 +47,25 @@ a:hover{
 
 
 
-/*------------Responsive para celulares----------------*/
+ 
 
 @media (max-width: 600px) {
     body, .myBody {
-        padding: 1rem; /* Espacio interno para que no quede todo pegado al borde */
-    }
-
+        padding: 1rem;  
     h1 {
-        font-size: 2.5rem;       /* Título más chico */
-        text-align: center;      /* Lo centramos para que se vea más elegante */
-        padding-left: 0;         /* Eliminamos el padding izquierdo si tenías */
+        font-size: 2.5rem;        
+        text-align: center;       
+        padding-left: 0;          
     }
 
     ul {
-        flex-direction: column; /* Apila las opciones */
-        align-items: center;    /* Centra cada ítem en columna */
+        flex-direction: column;  
+        align-items: center;     
         gap: 1rem;
-        padding: 0;             /* Elimina padding izquierdo */
+        padding: 0;              
     }
 
     li {
         font-size: 1.2rem;
     }
-}
+}}

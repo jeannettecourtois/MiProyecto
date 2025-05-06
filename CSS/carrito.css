@@ -4,7 +4,12 @@ body {
     background-color: #EDE8D0;
 }
 
-/* NAVBAR */
+h2 a{
+    text-decoration: none;
+    color: black;
+}
+
+
 .navbar {
     background-color: #EDE8D0;
     display: flex;
@@ -106,7 +111,7 @@ main {
     background-color: #704828;
 }
 
-/* FOOTER */
+
 .footer {
     background-color: #F9F4ED;
     display: flex;
@@ -127,7 +132,7 @@ main {
 }
 
 
-/* --------- RESPONSIVE: para pantallas menores a 600px --------- */
+ 
 @media (max-width: 600px) {
     .navbar {
         flex-direction: column;
